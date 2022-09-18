@@ -18,7 +18,7 @@ body {
 }
 .header a {
   float: left;
-  color: black;
+  color: #000000;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -32,14 +32,14 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
+  color: #3b7d8c;
 }
 .header a:hover {
   background-color: #ddd;
   color: black;
 }
 .header a.active {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #75b2bf;
 }
 .header-right {
   float: right;
@@ -62,12 +62,17 @@ body {
     display: block;
     letter-spacing: 4px;
     text-align: center;
+    line-height: 15px;
   }
   .header-right {
     float: none;
   }
   .header a.logo {
     letter-spacing: 4px;
+    line-height: 15px;
+  }
+  .header {
+    padding: 10px;
   }
 }
 /* Hero image under navbar */
@@ -80,10 +85,22 @@ body {
 #main {
   width: 100%;
   padding: 5px;
-  background-color: gray;
+  background-color: #ceecf2;
 }
 #main h2 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/******************************************************* Contact Us page ******************************************************/
+/******************************************************************************************************************************/
+
+#contact-main {
+  background-color: lightgray;
+  margin-top: 20px;
+}
+.main-padding {
+  padding: 30px;
+  text-align: center;
 }
