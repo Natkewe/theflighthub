@@ -44,6 +44,37 @@ body {
 .header-right {
   float: right;
 }
+
+.community-icons { /* Icons */
+  display: block;
+}
+.link-style { /* Tel numbers and email links colour */
+  color: #1a75ff;
+  letter-spacing: 2px;
+  font-size: large;
+}
+
+.animation-image{
+  height:600px;
+  width: 2341px;
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.animation-outer {
+  height:600px;
+  width: 2341px;
+  overflow: hidden;
+}
+@keyframes hero-zoom {
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.1);
+  }
+}
+
 /* Break points for Header and Navbar */
 @media screen and (max-width: 899px) {
   .header a {
@@ -103,4 +134,45 @@ body {
 .main-padding {
   padding: 30px;
   text-align: center;
+}
+
+/******************************************************* About Us page ******************************************************/
+/******************************************************************************************************************************/
+
+.box { /* four boxes with reviews*/
+  display: inline-block;
+  width: 20%;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container2 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container2 span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .box {
+      text-align: center;
+  }
+  .box img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
 }
