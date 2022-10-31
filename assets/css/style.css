@@ -139,38 +139,38 @@ body {
 /******************************************************* About Us page ******************************************************/
 /******************************************************************************************************************************/
 
-.box { /* four boxes with reviews*/
+/* four boxes with reviews and images */
+#review-one, #review-two, #review-three {
   display: inline-block;
-  width: 20%;
+}
+.container {
   border: 2px solid #ccc;
   background-color: #eee;
   border-radius: 5px;
+  width: 33%;
   padding: 16px;
-  margin: 16px 0
+  margin: 1px 0
 }
-
-.box::after {
+.container::after {
   content: "";
   clear: both;
   display: table;
 }
-
-.container2 img {
+.container img {
   float: left;
   margin-right: 20px;
   border-radius: 50%;
 }
-
-.container2 span {
+.container span {
   font-size: 20px;
   margin-right: 15px;
 }
 
 @media (max-width: 500px) {
-  .box {
+  .container {
       text-align: center;
   }
-  .box img {
+  .container img {
       margin: auto;
       float: none;
       display: block;
