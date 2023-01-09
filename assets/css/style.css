@@ -130,10 +130,42 @@ body {
 #contact-main {
   background-color: lightgray;
   margin-top: 20px;
+  border: 2px solid #eee;
+  border-radius: 18px;
 }
 .main-padding {
   padding: 30px;
-  text-align: center;
+  
+}
+/* Three boxes of how to contact us */
+.box {
+	background-color: #eee;
+	margin-bottom: 7px;
+	text-align: center;
+	border: 2px solid #eee;
+    border-radius: 18px;
+}
+
+/* Three images in boxes */
+.call-us {
+	margin: 10px;
+	border: 5px solid white;
+}
+
+.box, h2 {
+	padding-top: 8px;
+}
+
+/* Break points for text in boxes */
+@media screen and (max-width: 800px) {
+  .call-us {
+    margin: 2px;
+	border: 2px solid white;  
+  }
+   .box, h2 {
+	padding-top: 0px;
+}
+
 }
 
 /******************************************************* About Us page ******************************************************/
