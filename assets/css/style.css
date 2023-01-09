@@ -212,3 +212,50 @@ body {
 	margin: 10px 0 10px 0;
 	border: 5px solid #eee;
 }
+
+
+/** Footer and Social links **/
+
+footer {
+  padding: 0px;
+  background-color: #3b7d8c;
+  color: white;
+  height: 95px;	
+}
+
+.links-style {
+  width: 45px;
+  height: 45px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+
+.social-links-hover {
+  color:white;
+}
+.social-links-hover:hover {
+  color: #E69C95;
+}
+
+.social-items {
+  background-color: #3b7d8c;
+  border: 0;
+}
+/* Hide the social links text */
+.sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+
