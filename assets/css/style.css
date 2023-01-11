@@ -124,6 +124,92 @@ body {
   letter-spacing: 2px;
 }
 
+
+/* Gallery of travel idea photos *
+****************************/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.photo-box {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.photo-box img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .photo-box{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .photo-box {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Fade overlay on gallery images */
+/** Code for Fade in Overlay found on w3schools  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade  **/
+
+.photo-box {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #75b2bf;
+}
+
+.photo-box:hover .overlay {
+  opacity: 1;
+}
+
+/* Text for over img when on hover */
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
 /******************************************************* Contact Us page ******************************************************/
 /******************************************************************************************************************************/
 
