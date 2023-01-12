@@ -18,6 +18,7 @@
     <!-- Icons used throughout this site -->
   <script src="https://unpkg.com/feather-icons"></script>
 
+
     <title>The Flight Hub</title>
 </head>
 <header>
@@ -58,6 +59,7 @@
                 <h2>Change or cancel a booking</h2>
                 <p>Call us if you are needing to change or cancel a booking with us. Call our team on <a href="0800 000 111" class="link-style" title="call us" target="_blank">0800 000 111</a></p>
                     </div>
+
                     <div class="col-4">
                         <img src="assets/images/office.jpg" class="call-us" alt="" width="100%">
                     </div>
@@ -66,16 +68,30 @@
             <div class="box">
                 <div class="row justify-content-evenly">
                  <div class="col-4">
-                 <h2>Find a store near you</h2>
-                <p>Search for your nearest store and pop in to see us today</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/AdobeStock_392772207.jpeg" class="call-us" alt="" width="100%">
-                    </div>
-        </div>
+                 
+                  <h2>Find a store near you</h2>
+                  <br>
+                  <p>Pop in and see us today</p>
+                  <p>(A) 14a Broomhall Street, Sheffield, S2 2NA</p>
+                  <p>(B) 1 Park Place, Cardiff, CF10 3UD</p>
+                  <p>(C) 9 Church Court, Cox Street, Birmingham, B3 1RD</p>
+                  <p>(D) 12 Albany Road, Coventry, CV5 6JQ </p>
+                  <p>(E) 122 Kings Avenue, Watford, WD18 7SA</p>
+                
+                </div>
+
+ <!-- Store map locator -->
+ <div class="col-4">
+                  <div id="map" class="call-us" width="710" height="473"></div>
+                </div>
+
+             
             </div>
+
     </div><!-- Container end div -->
 
+
+     <!-- Footer and social links-->
     <footer>
         <p class="copyright">The Flight Hub © 2022</p>
             
@@ -121,12 +137,23 @@
         </div>
           </footer>
 
+         
 
 
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <!-- Google Maps -->
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYexPfW2bXE_q4e8KI5avwAIbfU4bkO2c&callback=initMap"></script>
+<script src="assets/js/maps.js"></script>
+
+
+
 </body>
 
 </html>
