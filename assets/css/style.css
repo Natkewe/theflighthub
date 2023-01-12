@@ -75,6 +75,10 @@ body {
   }
 }
 
+figure {
+  margin: 0;
+}
+
 /* Break points for Header and Navbar */
 @media screen and (max-width: 899px) {
   .header a {
@@ -111,6 +115,7 @@ body {
   width: 100%;
   object-fit: cover;
   max-height: 600px;
+  margin-bottom: 15px;
 }
 /* Main box for flight serach */
 #main {
@@ -125,50 +130,25 @@ body {
 }
 
 
-/* Gallery of travel idea photos *
-****************************/
 
-.row {
+/******************************************* Gallery of travel idea photos ********************
+***********************************************************************************************/
+
+#gallery-box { 
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  clear: both;
+  line-height: 0;
+  column-count: 3;
+  column-gap: 0;
 }
-
-/* Create four equal columns that sits next to each other */
-.photo-box {
-  flex: 25%;
-  max-width: 50%;
-  padding: 0 4px;
+.responsive-box {
+padding: 5px;
 }
-
-.photo-box img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .photo-box{
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .photo-box {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-/* Fade overlay on gallery images */
-/** Code for Fade in Overlay found on w3schools  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade  **/
 
 .photo-box {
   position: relative;
-  width: 100%;
+  height: auto;
 }
 
 .image {
@@ -190,7 +170,7 @@ body {
   background-color: #75b2bf;
 }
 
-.photo-box:hover .overlay {
+.photo-box:hover .overlay{
   opacity: 1;
 }
 
@@ -207,8 +187,26 @@ body {
   text-align: center;
 }
 
+#box-contents {
+  width: 100%;
+  height: auto;
+}
 
+/* Responsive layout - makes a two column-layout instead of four columns *
+@media screen and (max-width: 800px) {
+  .photo-box{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other *
+@media screen and (max-width: 600px) {
+  .photo-box {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 /******************************************************* Contact Us page ******************************************************/
 /******************************************************************************************************************************/
@@ -234,12 +232,14 @@ body {
 
 /* Three images in boxes */
 .call-us {
-	margin: 10px;
+	
 	border: 5px solid white;
 }
 
-.box, h2 {
+.box h2 {
 	padding-top: 8px;
+  font-size: 32px;
+	font-weight: unset;
 }
 
 /* Break points for text in boxes */
@@ -251,8 +251,14 @@ body {
    .box, h2 {
 	padding-top: 0px;
 }
-
 }
+
+/*--------------------------------------------Map*/
+
+#map {min-height: 360px;}
+
+
+
 
 /******************************************************* About Us page ******************************************************/
 /******************************************************************************************************************************/
@@ -295,8 +301,8 @@ body {
 }
 
 .lower-image {
-	margin: 10px 0 10px 0;
-	border: 5px solid #eee;
+	margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
