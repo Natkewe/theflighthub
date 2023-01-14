@@ -117,19 +117,28 @@ figure {
   max-height: 600px;
   margin-bottom: 15px;
 }
-/* Main box for flight serach */
-#main {
-  width: 100%;
-  padding: 5px;
-  background-color: #ceecf2;
-}
-#main h2 {
+
+/************************************* Main box for flight serach */
+/* Search bar finder for flights */
+
+.flight-header {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
+.flight-search {
+  padding-bottom: 20px;
+}
 
+.section-header {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#widget-skyscanner {
+  width: 70%;
+  margin-left: 15%;
+}
 
 /******************************************* Gallery of travel idea photos ********************
 ***********************************************************************************************/
@@ -230,10 +239,10 @@ padding: 5px;
     border-radius: 18px;
 }
 
-/* Three images in boxes */
+/* Two images in boxes */
 .call-us {
-	
 	border: 5px solid white;
+  
 }
 
 .box h2 {
@@ -253,12 +262,59 @@ padding: 5px;
 }
 }
 
+/* Padding for all three boxes */
+.box-contents {
+  padding-top: 22px;
+}
+.box-contents-mid {
+  padding-top: 30px;
+}
+.box-contents-lower {
+  padding-top: 30px;
+}
+
+/* Break points for text in boxes
+@media screen and (max-width: 1000px) {
+  .box-contents, .box-contents-lower, .box-contents-mid {
+    padding: 3px;
+	  
+  }
+  .box-contents h2, .box-contents-lower h2, .box-contents-mid h2 {
+	font-size: 24px;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .box-contents, .box-contents-lower, .box-contents-mid {
+    padding: 0px;
+    border: 0px;
+    letter-spacing: 0;
+    margin: 0;
+	  
+  }
+  .box-contents h2, .box-contents-lower h2, .box-contents-mid h2 {
+    padding: 0px;
+    border: 0px;
+    letter-spacing: 0;
+    margin: 0;
+    font-size: 16px;
+}
+.box-contents p, .box-contents-lower p, .box-contents-mid p {
+  padding: 0px;
+  border: 0px;
+  letter-spacing: 0;
+  margin: 0;
+  font-size: 13px;
+}
+}
+
+*/
+
 /*--------------------------------------------Map*/
-
-#map {min-height: 360px;}
-
-
-
+#map {
+  min-height: 279px;
+  border: 5px solid white;
+}
 
 /******************************************************* About Us page ******************************************************/
 /******************************************************************************************************************************/
