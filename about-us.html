@@ -2,135 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-    content="The Flighthub, a travel website for searching for flights">
-  <meta name="keywords"
-    content="travel, flights, flying, adventure">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Flighthub, a travel website for searching for flights and inspiration">
+  <meta name="keywords" content="travel, flights, flying, adventure">
   <meta name="author" content="Natalie Kew">
+  <title>The Flight Hub</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <!-- Icons used throughout this site -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Link to my css style sheet -->
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <!-- Icons used throughout this site -->
   <script src="https://unpkg.com/feather-icons"></script>
-
-    <title>The Flight Hub</title>
 </head>
+
 <header>
-    <!-- Navbar code taken and edited from https://www.w3schools.com/howto/howto_css_responsive_header.asp -->
-    <div class="header">
-        <a href="#default" class="logo">The Flight Hub</a>
-        <div class="header-right">
-            <a href="index.html">Home</a>
-            <a href="contact-us.html">Contact Us</a>
-            <a class="active" href="about-us.html">About Us</a>
-            <a href="buy-insurance.html">Buy Insurance</a>
-        </div>
+  <!-- Navbar code taken and edited from https://www.w3schools.com/howto/howto_css_responsive_header.asp -->
+  <div class="header">
+    <a href="index.html" class="logo">The Flight Hub</a>
+    <div class="header-right">
+      <a href="index.html">Home</a>
+      <a href="contact-us.html">Contact Us</a>
+      <a class="active" href="about-us.html">About Us</a>
     </div>
+  </div>
 </header>
 
 <body>
-    <!-- Hero image -->
-    <figure><img src="assets/images/about-us-main.jpg" class="img-fluid" alt="Image of a map on a table with a camera and note book"
-        width="2341" height="600"></figure>
+  <!-- Hero image -->
+  <figure><img src="assets/images/about-us-main.jpg" class="img-fluid"
+      alt="Image of a map on a table with a camera and note book" width="2341" height="600"></figure>
 
-            <!-- Start of container - Main content -->
-  <!-- https://getbootstrap.com/docs/5.0/layout/grid/ -->
-<div class="review-heading">
-  <h1>Customer Reviews</h1>
-</div>
-
-  
-<div class="container">
-  <div class="row">
-    <div class="col">
-       <figure><img src="assets/images/review-1.jpg" class="review" alt="Avatar" style="width:90px"></figure>
-            <p>Chris Martin<br> Flights to Sydney</p>
-            <p><i>"Great experience, would highly recommend."</i></p>
-    </div>
-    <div class="col">
-        <figure><img src="assets/images/review-2.jpg" class="review" alt="Avatar" style="width:90px"></figure>
-            <p>Wayne Smith<br> Flights to Canada</p>
-            <p><i>"Smooth booking process and excellent service."</i></p>
-    </div>
-    <div class="col">
-       <figure><img src="assets/images/review-3.jpg" class="review" alt="Avatar" style="width:90px"></figure>
-            <p>Jessie Hall<br> Flights to Amsterdam</p>
-            <p><i>"Great experience!"</i></p>
+  <!-- Grid system code used from Bootstrap https://getbootstrap.com/docs/5.0/layout/grid/ -->
+  <div class="review-heading">
+    <h1>Customer Reviews</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <figure><img src="assets/images/review-1.jpg" class="review" alt="Portrait of a man in glasses smiling"
+            style="width:90px"></figure>
+        <p>Chris Martin<br> Flights to Sydney</p>
+        <p><i>"Great experience, would highly recommend."</i></p>
+      </div>
+      <div class="col">
+        <figure><img src="assets/images/review-2.jpg" class="review" alt="Portait of a woman with curly hair smiling"
+            style="width:90px"></figure>
+        <p>Wayne Smith<br> Flights to Canada</p>
+        <p><i>"Smooth booking process and excellent service."</i></p>
+      </div>
+      <div class="col">
+        <figure><img src="assets/images/review-3.jpg" class="review" alt="Portrait of a woman with a yellow background"
+            style="width:90px"></figure>
+        <p>Jessie Hall<br> Flights to Amsterdam</p>
+        <p><i>"Great experience!"</i></p>
+      </div>
     </div>
   </div>
-</div>
-       
-<div class="container">
-  <div class="review-body">
-  <h2>About Us</h2>
-    <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata deserunt mollit anim id est laborum.</p>
-  <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa quim id est laborum.</p>
-    <p>Lorem Ipsum dolor sit amet, consectet bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laa commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <!-- About Us main body content -->
+  <div class="container">
+    <div class="review-body">
+      <h2>About Us</h2>
+      <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidata deserunt mollit anim id est laborum.</p>
+      <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa quim id est laborum.</p>
+      <p>Lorem Ipsum dolor sit amet, consectet bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laa commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.</p>
+    </div>
   </div>
-</div>
 
-
-<div class="container lower-image">
-  <img src="/assets/images/AdobeStock_415733144.jpeg" alt="" width="100%">
-</div>
-
-
+  <div class="container lower-image">
+    <figure><img src="/assets/images/AdobeStock_415733144.jpeg"
+        alt="Image of a two pairs of hands opened up holding a paper plane cut out" width="100%"></figure>
+  </div>
 
   <footer>
-<p class="copyright">The Flight Hub © 2022</p>
-    
+    <p class="copyright">The Flight Hub © 2022</p>
+
     <div class="container list-inline">
-<div class="row align-items-start">
-  <div class="col social-items">
-      <li>
-          <a target="_blank" href="https://facebook.com">
-            <i data-feather="facebook" class="links-style social-links-hover" title="Go to Facebook.com"
-              aria-hidden="true"></i>
-            <script>
-              feather.replace()
-            </script>
-            <span class="sr-only">Facebook</span>
-          </a>
-        </li>
-  </div>
-  <div class="col social-items">
-     <li>
-          <a target="_blank" href="https://twitter.com">
-            <i data-feather="twitter" class="links-style social-links-hover" title="Go to Twitter.com"
-              aria-hidden="true"></i>
-            <script>
-              feather.replace()
-            </script>
-            <span class="sr-only">Twitter</span>
-          </a>
-        </li>
-  </div>
-  <div class="col social-items">
-      <li>
-          <a target="_blank" href="https://instagram.com">
-            <i data-feather="instagram" class="links-style social-links-hover" title="Go to Instagram.com"
-              aria-hidden="true"></i>
-            <script>
-              feather.replace()
-            </script>
-            <span class="sr-only">Instagram</span>
-          </a>
-        </li>
-  </div>
-</div>
-</div><!-- Container end div -->
+      <div class="row align-items-start">
+        <div class="col social-items">
+          <ul>
+            <li>
+              <a target="_blank" href="https://facebook.com">
+                <i data-feather="facebook" class="links-style social-links-hover" title="Go to Facebook.com"
+                  aria-hidden="true"></i>
+                <script>
+                  feather.replace()
+                </script>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col social-items">
+          <ul>
+            <li>
+              <a target="_blank" href="https://twitter.com">
+                <i data-feather="twitter" class="links-style social-links-hover" title="Go to Twitter.com"
+                  aria-hidden="true"></i>
+                <script>
+                  feather.replace()
+                </script>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col social-items">
+          <ul>
+            <li>
+              <a target="_blank" href="https://instagram.com">
+                <i data-feather="instagram" class="links-style social-links-hover" title="Go to Instagram.com"
+                  aria-hidden="true"></i>
+                <script>
+                  feather.replace()
+                </script>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </footer>
 
+  <!-- Bootstrap Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
-    <!-- Bootstrap Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>

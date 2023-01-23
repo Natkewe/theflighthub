@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Flighthub, a travel website for searching for flights">
+  <meta name="description" content="The Flighthub, a travel website for searching for flights and inspiration">
   <meta name="keywords" content="travel, flights, flying, adventure">
   <meta name="author" content="Natalie Kew">
+  <title>The Flight Hub</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Link to my css style sheet -->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
   <!-- Icons used throughout this site -->
   <script src="https://unpkg.com/feather-icons"></script>
-
-
-  <title>The Flight Hub</title>
 </head>
+
 <header>
   <!-- Navbar code taken and edited from https://www.w3schools.com/howto/howto_css_responsive_header.asp -->
   <div class="header">
@@ -27,7 +27,6 @@
       <a class="active" href="index.html">Home</a>
       <a href="contact-us.html">Contact Us</a>
       <a href="about-us.html">About Us</a>
-      <a href="buy-insurance.html">Buy Insurance</a>
     </div>
   </div>
   <!-- Hero image -->
@@ -36,50 +35,35 @@
 </header>
 
 <body>
-
-
   <!-- Heading information for flights -->
   <div class="flight-header">
     <div class="row">
       <div class="section-header">
         <h2>Search For Flights Today</h2>
-        <h2 id="demo"></h2>
+        <h2 id="timings"></h2>
         <p>Lorem Ipsum dolor sit amet consectetur adipiscing elit sed doullamco laboris</p>
       </div>
     </div>
 
-    <!-- Search box for flights -->
+    <!-- Search box for flights with skyscanner -->
     <div class="container">
       <div class="row">
         <div class="flight-search">
-
           <div class="col-xs-12">
-            <div data-skyscanner-widget="SearchWidget" data-origin-geo-lookup="true" 
-            data-widget-padding="12px 14px" data-flight-type="return" data-target="_blank" data-flight-outbound-date=() data-colour="#75b2bf"
-              id="widget-skyscanner"></div>
+            <div data-skyscanner-widget="SearchWidget" data-origin-geo-lookup="true" data-widget-padding="12px 14px"
+              data-flight-type="return" data-target="_blank" data-colour="#75b2bf" id="widget-skyscanner"></div>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Photo gallery with fade text boxes -->
     <div class="container">
       <div id="gallery-box">
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/australia-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/australia-image.jpg"
+              alt="Photo of Sydney Harbour bridge at sunset" width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Australia</div>
@@ -88,8 +72,8 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/caribbean-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/caribbean-image.jpg"
+              alt="Photo of a beach with white sand and clear water in the Caribbean" width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Caribbean</div>
@@ -98,8 +82,9 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/canada-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/canada-image.jpg"
+              alt="Photo of a lady with a flag of Canada over her back looking at the mountains" width="429"
+              height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Canada</div>
@@ -108,8 +93,9 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/iceland-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/iceland-image.jpg"
+              alt="Photo from above of a car driving down a long road with green mossy rocks either side" width="429"
+              height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Iceland</div>
@@ -118,8 +104,9 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/greece-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/greece-image.jpg"
+              alt="Photo of Greece with the blue sea and white buildings to the right" width="429" height="286">
+          </figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Greece</div>
@@ -128,8 +115,9 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/newyork-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/newyork-image.jpg"
+              alt="Photo of New York at night with cars and people on the streets down town" width="429" height="286">
+          </figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">New York</div>
@@ -138,8 +126,9 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/southafrica-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/southafrica-image.jpg"
+              alt="Image of several men stood with their colourful outfit and with hearding or traditional sticks"
+              width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">South Africa</div>
@@ -148,8 +137,8 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/thailand-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/thailand-image.jpg"
+              alt="Photo of a line of boats at the beach in Thailand" width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Thailand</div>
@@ -158,8 +147,9 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/florida-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/florida-image.jpg"
+              alt="Photo of someone holding up a card infront of the camera with 'Universal studios' written on it"
+              width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Florida</div>
@@ -168,8 +158,8 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/italy-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/italy-image.jpg"
+              alt="Photo of the Colosseum in Italy with the blue sky behind" width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">Italy</div>
@@ -178,8 +168,9 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/india-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/india-image.jpg"
+              alt="Photo of a stall with several dishes and jars of spices and someone working behind the stall chopping food"
+              width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">India</div>
@@ -188,8 +179,8 @@
         </div>
 
         <div class="photo-box">
-          <img class="responsive-box" src="assets/images/newzealand-image.jpg"
-            alt="Photo of a gym floor with a man standing with a weight bar" width="429" height="286">
+          <figure><img class="responsive-box" src="assets/images/newzealand-image.jpg"
+              alt="Photo of the mountains, water and green trees in New Zealand" width="429" height="286"></figure>
           <div class="overlay">
             <a target="_blank" href="https://en.wikipedia.org/wiki/Cat">
               <div class="text">New Zealand</div>
@@ -197,41 +188,95 @@
           </div>
         </div>
 
-
       </div>
     </div>
 
 
-
-
-
-
-
-
-        
-
-
-
-
-        <!-- Bootstrap Javascript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-
-
-        <!-- Flight widget
-        <div data-skyscanner-widget="MultiVerticalWidget"></div>
-        -->
-
-        <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-
-
-
-
-     <!-- Link for js file -->
-        <script type="text/javascript" src="assets/js/home.js"></script>
+    <!--
  
- 
+  <input
+  id="pac-input"
+  class="controls"
+  type="text"
+  placeholder="Search Box"
+/>
+<div id="map"></div>
+
+    -->
+
+
+
+    <footer>
+      <p class="copyright">The Flight Hub © 2022</p>
+
+      <div class="container list-inline">
+        <div class="row align-items-start">
+          <div class="col social-items">
+            <ul>
+              <li>
+                <a target="_blank" href="https://facebook.com">
+                  <i data-feather="facebook" class="links-style social-links-hover" title="Go to Facebook.com"
+                    aria-hidden="true"></i>
+                  <script>
+                    feather.replace()
+                  </script>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col social-items">
+            <ul>
+              <li>
+                <a target="_blank" href="https://twitter.com">
+                  <i data-feather="twitter" class="links-style social-links-hover" title="Go to Twitter.com"
+                    aria-hidden="true"></i>
+                  <script>
+                    feather.replace()
+                  </script>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col social-items">
+            <ul>
+              <li>
+                <a target="_blank" href="https://instagram.com">
+                  <i data-feather="instagram" class="links-style social-links-hover" title="Go to Instagram.com"
+                    aria-hidden="true"></i>
+                  <script>
+                    feather.replace()
+                  </script>
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- Flight widget -->
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+
+    <!-- Link for js file -->
+    <script type="text/javascript" src="assets/js/home.js"></script>
+    <script type="text/javascript" src="assets/js/country-search.js"></script>
+
+    <!-- Google Maps API for lower Home screen
+    
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=beta&key=AIzaSyBYexPfW2bXE_q4e8KI5avwAIbfU4bkO2c&libraries=places&callback=initMap">
+</script>
+
+-->
 
 </body>
 
