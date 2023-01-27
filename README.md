@@ -216,7 +216,7 @@ This element is yet to be added.
 ----
 
 2. Screenshot from W3C HTML Validation Service of my HTML code passing without errors
-![Screenshot taken from W3C validation of HTML code pass](documents/w3-passes.png)
+![Screenshot taken from W3C validation of HTML code pass](documents/w3c-html.png)
 
 ----
 
