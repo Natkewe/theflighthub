@@ -187,7 +187,7 @@ figure {
 .gallery-box {
   clear: both;
   line-height: 0;
-  column-count: 3;
+  column-count: 4;
   column-gap: 0;
 }
 
@@ -210,14 +210,14 @@ padding: 5px;
 /***************************** laptop max width 993px **************************************************/
 @media only screen and (max-width: 993px) {
   .gallery-box { 
-    column-count: 2;
+    column-count: 3;
   }
 }
 
 /***************************** laptop max width 839px **************************************************/
 @media only screen and (max-width: 839px) {
   .gallery-box {
-    column-count: 1;
+    column-count: 2;
   }
 }
 
@@ -423,6 +423,18 @@ overflow: hidden;
     width: 90.333333333%;
   }
 }
+
+
+/* Map with store marker */
+
+#simple-map {
+  width: 90vw;
+  height: 75vh;
+  margin: 0 auto;
+  padding: 1.2em;
+}
+
+
 
 /******************************************************* About Us page ******************************************************/
 /******************************************************************************************************************************/
