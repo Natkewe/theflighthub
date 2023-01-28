@@ -98,11 +98,13 @@ figure {
     display: block;
     font-size: 16px;
   }
+
   .header a.logo {
     letter-spacing: 0px;
     font-size: 35px;
   }
 }
+
 @media screen and (max-width: 704px) {
   .header a {
     float: none;
@@ -111,13 +113,16 @@ figure {
     text-align: center;
     line-height: 15px;
   }
+
   .header-right {
     float: none;
   }
+
   .header a.logo {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     line-height: 15px;
   }
+
   .header {
     padding: 10px;
   }
@@ -147,6 +152,7 @@ figure {
   margin-bottom: 5px;
   letter-spacing: 2px;
 }
+
 .section-header p {
   font-size: 20px;
   margin-bottom: 0.5rem;
@@ -163,24 +169,25 @@ figure {
 
 /***************************** laptop max width 767px **************************************************/
 @media only screen and (max-width: 767px) {
-  .section-header { 
+  .section-header {
     letter-spacing: 1px;
   }
 }
 
 /***************************** laptop max width 590px **************************************************/
 @media only screen and (max-width: 590px) {
-  .section-header { 
+  .section-header {
     letter-spacing: 0px;
   }
+
   .section-header p {
     font-size: 18px;
   }
+
   #timings {
     font-size: 18px;
   }
-} 
-
+}
 
 /* Gallery of clickable photos */
 
@@ -191,7 +198,8 @@ figure {
   column-gap: 0;
 }
 
-.gallery-box, img {
+.gallery-box,
+img {
   display: block;
   width: 100%;
   height: auto;
@@ -200,16 +208,17 @@ figure {
 }
 
 .responsive-box {
-padding: 5px;
+  padding: 5px;
 }
 
 .photo-box {
   position: relative;
   height: auto;
 }
+
 /***************************** laptop max width 993px **************************************************/
 @media only screen and (max-width: 993px) {
-  .gallery-box { 
+  .gallery-box {
     column-count: 3;
   }
 }
@@ -251,102 +260,11 @@ padding: 5px;
   text-align: center;
 }
 
-
-/*
-#box-contents {
-  width: 100%;
-  height: auto;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Map for lower Home screen */
-
-#map {
-  min-height: 360px;
-}
-
-#infowindow-content .title {
-  font-weight: bold;
-}
-
-#infowindow-content {
-  display: none;
-}
-
-#map #infowindow-content {
-  display: inline;
-}
-
-.pac-card {
-  background-color: #fff;
-  border: 0;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-  margin: 10px;
-  padding: 0 0.5em;
-  font: 400 18px Roboto, Arial, sans-serif;
-  overflow: hidden;
-  font-family: Roboto;
-  padding: 0;
-}
-
-#pac-container {
-  padding-bottom: 12px;
-  margin-right: 12px;
-}
-
-.pac-controls {
-  display: inline-block;
-  padding: 5px 11px;
-}
-
-.pac-controls label {
-  font-family: Roboto;
-  font-size: 13px;
-  font-weight: 300;
-}
-
-#pac-input {
-  background-color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 400px;
-}
-
-#pac-input:focus {
-  border-color: #4d90fe;
-}
-
-#title {
-  color: #fff;
-  background-color: #4d90fe;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 6px 12px;
-}
-
-#target {
-  width: 345px;
-}
-
 /* Fixes issue with ul bullet points showing on social links */
-ul, li {
-margin: 0;
-overflow: hidden;
+ul,
+li {
+  margin: 0;
+  overflow: hidden;
 }
 
 /******************************************************* Contact Us page ******************************************************/
@@ -404,37 +322,52 @@ overflow: hidden;
     margin: 2px;
     border: 2px solid white;
   }
-
   .box,
   h2 {
     padding-top: 0px;
   }
 }
+
+
 /* Break points for reducing the width with the col 4 img boxes */
-@media screen and (max-width: 997px) {
+@media screen and (max-width: 1196px) {
   .col-4 {
-    width: 70.333333333%;
+    width: 39%;
+  }
+  .box-contents-mid {
+    padding-top: 10px;
+  }
+  .box-contents {
+    padding-top: 10px;
+  }
+  .box-contents-lower {
+padding-top: 20px;
   }
 }
 
 /* Break points for reducing the width with the col 4 img boxes */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 998px) {
   .col-4 {
-    width: 90.333333333%;
+    width: 85.333333333%;
+  }
+  .box-contents-mid {
+    padding-top: 5px;
+  }
+  .box-contents {
+    padding-top: 12px;
+  }
+  .box-contents-lower {
+    padding-top: 10px;
   }
 }
-
 
 /* Map with store marker */
 
-#simple-map {
-  width: 90vw;
-  height: 75vh;
+#map {
+  height: 279px;
   margin: 0 auto;
-  padding: 1.2em;
+  border: 5px solid white;  
 }
-
-
 
 /******************************************************* About Us page ******************************************************/
 /******************************************************************************************************************************/
@@ -454,6 +387,12 @@ h1 {
   background-color: #eee;
   text-align: center;
   margin-right: 5px;
+}
+
+@media screen and (max-width: 458px) {
+  .col {
+    margin-top: 5px;
+  }
 }
 
 .review {
@@ -508,11 +447,12 @@ footer {
 .links-style {
   width: 45px;
   height: 45px;
+  stroke-width: 1;
 }
 
 .copyright {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
   padding: 5px 0 5px 0;
 }
